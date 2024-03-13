@@ -63,7 +63,7 @@ function Invitation({ name }) {
         height={height}
         numberOfPieces={300}
         recycle={false}
-        gravity={0.03}
+        gravity={0.07}
       />
       <div className={cx("music")} onClick={handleOpenAudio}>
         <ImMusic className={cx("icon", isOpenMusic && "rotate")} />
