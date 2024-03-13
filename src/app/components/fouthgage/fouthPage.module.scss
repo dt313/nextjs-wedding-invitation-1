@@ -1,0 +1,294 @@
+.wrapper {
+  width: 100%;
+  // background-color: #333;
+  background-color: var(--primary-5);
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 48px 0;
+  padding-bottom: 100px;
+  background-color: #d19fa033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25% 25% 40% 50% / 0% 0% 11% 11%;
+}
+
+.box {
+  max-width: 1024px;
+  width: 100%;
+  padding: 24px;
+  // padding-bottom: 68px;
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 16px;
+  gap: 24px;
+}
+
+.left {
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.title {
+  font-size: 3.6rem;
+  line-height: 0.1;
+  margin: 8px 0;
+  color: var(--primary-1);
+  font-family: Brice;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.wonderland {
+  width: 70%;
+  height: 40px;
+  object-fit: cover;
+}
+
+.line {
+  width: 100px;
+  height: 1px;
+  background-color: black;
+}
+
+.description {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Text2;
+  font-weight: 500;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-block {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.lable {
+  display: block;
+  font-size: 2rem;
+  font-family: Text2;
+  font-weight: 600;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  margin-top: 4px;
+  padding: 4px;
+  padding-left: 12px;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  border: 0.5px solid black;
+  outline: none;
+
+  &:focus {
+    border: 0.5px solid var(--primary-1);
+  }
+}
+
+.large {
+  max-width: 100%;
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  resize: none;
+  line-height: 1.5;
+}
+
+.check {
+  display: inline-block;
+  margin-right: 24px;
+  margin-top: 12px;
+  font-size: 1.8rem;
+  font-family: Text2;
+  font-weight: 500;
+
+  .radio {
+    cursor: pointer;
+  }
+}
+
+.option {
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 12px;
+  height: 40px;
+  border-radius: 99999px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: var(--primary-1);
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  margin: 12px;
+}
+
+.nav {
+  display: flex;
+
+  .item {
+    text-align: center;
+    flex: 1;
+    padding: 4px 24px;
+    margin-right: 12px;
+    // background-color: #c5a85799;
+    border: 1px solid var(--primary-1-hover);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: var(--primary-1);
+    color: #fff;
+  }
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+}
+
+.wishes {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wishes-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 100%;
+  height: 500px;
+  // padding: 12px;
+  // background-color: #333;
+  overflow-y: overlay;
+  border-radius: 8px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.wish {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f2f1ee;
+  border-radius: 8px;
+  padding: 4px 8px;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  .wish-name {
+    line-height: 1.1;
+    font-size: 2rem;
+
+    font-family: Text2;
+    font-weight: 700;
+  }
+
+  .wish-content {
+    font-size: 1.6rem;
+
+    font-family: Text2;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 4px;
+  }
+}
+
+.see-all {
+  margin-top: 12px;
+  float: right;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.error {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: red;
+}
+
+.analyst {
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    border-radius: 25% 25% 40% 50% / 0% 0% 8% 8%;
+  }
+  .box {
+    flex-direction: column;
+    margin: 12px;
+  }
+
+  .left {
+    padding-bottom: 48px;
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    padding: 12px;
+  }
+
+  .left,
+  .right {
+    margin: 0;
+  }
+
+  .wishes {
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+  }
+}

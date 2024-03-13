@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.avatar {
+  border-radius: 200px 200px 24px 24px;
+  border: 5px solid var(--primary-1);
+  border-style: double;
+  border-width: 5px 5px 5px 5px;
+  border-color: var(--primary-1);
+  width: auto;
+  max-width: 400px;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 2.6rem;
+  line-height: 0.1;
+  // font-family: "Courier New", Courier, monospace;
+}
+
+.fullname {
+  line-height: 0.4;
+  font-size: 2.6rem;
+  font-family: Moritza;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+
+.gender {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: black;
+  font-weight: bold;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: Text2;
+}
+
+.text {
+  margin-top: 8px;
+}
+
+.insta-box {
+  width: 50px;
+  height: 50px;
+  margin-top: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .icon {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+.flower {
+  width: 70px;
+  height: 70px;
+  margin-top: 12px;
+  object-fit: cover;
+  filter: drop-shadow(1px 1px 2px #424244);
+}

@@ -1,0 +1,101 @@
+.wrapper {
+  margin: 48px 12px;
+  padding: 24px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  flex: 1;
+  border-style: double;
+  border-width: 5px 0px 5px 0;
+  border-color: var(--primary-1);
+  background-color: #ffffff99;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.img {
+  width: 80px;
+  margin-top: 24px;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.date {
+  font-size: 1.6rem;
+  font-weight: lighter;
+  font-family: Text2;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.wonderland {
+  width: 70%;
+  height: 40px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.time {
+  font-size: 1.5;
+  line-height: 0;
+
+  font-style: oblique;
+  font-family: Text2;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.address {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+
+  .street {
+    font-weight: 200;
+    font-size: 1.3rem;
+    font-family: "Courier New", Courier, monospace;
+    font-style: italic;
+  }
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  margin-top: 48px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-1);
+  color: #fff;
+  font-size: 1.4rem;
+
+  cursor: pointer;
+
+  .icon {
+    margin-right: 12px;
+  }
+}
+
+.small {
+  width: 150px;
+}
+
+.black-icon {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .img {
+    width: 100px;
+  }
+}

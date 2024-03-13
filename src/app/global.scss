@@ -1,0 +1,89 @@
+@import "normalize.css";
+
+@font-face {
+  font-family: Amira;
+  src: url(./static/Fz-Amira.ttf);
+}
+
+@font-face {
+  font-family: Moritza;
+  src: url(./static/FzTheMoritza.ttf);
+}
+
+@font-face {
+  font-family: Brice;
+  src: url(./static/brice.ttf);
+}
+
+@font-face {
+  font-family: Letter;
+  src: url(./static/letter.ttf);
+}
+
+@font-face {
+  font-family: Text;
+  src: url(./static/text.ttf);
+}
+
+@font-face {
+  font-family: Text2;
+  src: url(./static/Text2.ttf);
+}
+
+:root {
+  --background-color: #333;
+  --primary-6: #d6a251;
+  --primary-5: #ffffff;
+  --primary-4: #a2af9f;
+
+  --primary-3: #e4e4e4;
+  --primary-2: #a3a1a2;
+  // --primary-1: #d6a251;
+  --primary-1: #8e0202;
+  --primary-1-hover: #8e020299;
+
+  --text-color: #333;
+  --font-family: "Fira Code", Monaco, Consolas, "Ubuntu Mono", monospace;
+  --font-family-1: "Courier New", Courier, monospace;
+  --large-font: Brice;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  color: var(--text-color);
+  overflow: overlay;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

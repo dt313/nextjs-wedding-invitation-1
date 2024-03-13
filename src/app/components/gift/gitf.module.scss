@@ -1,0 +1,141 @@
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--primary-5);
+
+  padding: 100px 24px 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3.6rem;
+  font-family: Brice;
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+.wonderland {
+  max-width: 500px;
+  width: 70%;
+  height: 40px;
+  object-fit: cover;
+}
+
+.description {
+  font-size: 1.4rem;
+  text-align: center;
+  font-size: 1.8rem;
+
+  font-family: Text2;
+  font-weight: 500;
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 9999px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary-1);
+  color: #fff;
+  font-size: 1.4rem;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  .icon {
+    margin-right: 12px;
+  }
+}
+
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 48px 12px;
+  border: 2px solid var(--primary-1);
+  border-radius: 12px;
+  background-color: var(--primary-3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-name {
+  font-size: 2.4rem;
+  margin: 12px 0;
+  font-size: 3.6rem;
+
+  font-family: Brice;
+  font-weight: 400;
+}
+
+.card-bow {
+  width: 100%;
+  filter: drop-shadow(1px 1px 2px #424244);
+}
+
+.card-number {
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: Brice;
+}
+
+.card-own {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+
+  font-size: 2.4rem;
+  font-family: Text2;
+  font-weight: 600;
+}
+
+.card-btn {
+  margin: 48px 0;
+  width: 80%;
+  height: 40px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  color: black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  .icon {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.4rem;
+  }
+}
