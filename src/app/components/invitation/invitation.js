@@ -61,9 +61,9 @@ function Invitation({ name }) {
       <Confetti
         width={width}
         height={height}
-        numberOfPieces={100}
+        numberOfPieces={300}
         recycle={false}
-        gravity={0.08}
+        gravity={0.03}
       />
       <div className={cx("music")} onClick={handleOpenAudio}>
         <ImMusic className={cx("icon", isOpenMusic && "rotate")} />

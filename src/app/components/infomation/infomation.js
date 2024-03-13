@@ -70,7 +70,7 @@ function Infomation({
 
       <img
         className={cx("flower")}
-        src={images.flower.default.src}
+        src={images.roses.default.src}
         style={styleText}
       />
     </div>

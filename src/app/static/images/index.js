@@ -7,6 +7,7 @@ const images = {
   flower1: require("./flower1.png"),
   f1: require("./f1.png"),
   f2: require("./f2.png"),
+  roses: require("./roses.png"),
 };
 
 export const wedding = {
