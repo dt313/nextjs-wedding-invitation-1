@@ -15,7 +15,7 @@ function Main() {
     if (name.trim() === "" && isCopied === true) {
       setError("Vui lòng nhập tên người mà bạn muốn mời ");
     } else {
-      const path = `${window.location.href}${encodeURIComponent(name)}`;
+      const path = `${window.location.origin}/${encodeURIComponent(name)}`;
       copyTextToClipboard(path);
       setName("");
       setIsCopied(true);
