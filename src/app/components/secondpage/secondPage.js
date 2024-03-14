@@ -9,20 +9,20 @@ const cx = classNames.bind(styles);
 function SecondPage() {
   const info = [
     {
-      name: "Hằng",
-      fullname: "Lê Thị Thu Hằng",
-      gender: "female",
-      fatherName: "Lê Đình Thịnh",
-      motherName: "Nguyễn Thị Kim Anh",
-      avatar: wedding?.bride,
-    },
-    {
       name: "Quảng",
       fullname: "Lê Đình Quảng",
       gender: "male",
       fatherName: "Lê Đình Yên",
       motherName: "Nguyễn Thị Phượng",
       avatar: wedding?.groom,
+    },
+    {
+      name: "Hằng",
+      fullname: "Lê Thị Thu Hằng",
+      gender: "female",
+      fatherName: "Lê Đình Thịnh",
+      motherName: "Nguyễn Thị Kim Anh",
+      avatar: wedding?.bride,
     },
   ];
 

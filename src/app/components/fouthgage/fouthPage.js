@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useInView, motion } from "framer-motion";
 import Analyst from "~/app/components/analyst";
 import images from "~/app/static/images";
+import useDebounce from "~/app/hepler/useDebounce";
 const cx = classNames.bind(styles);
 
 function FouthPage({ slug }) {
@@ -15,6 +16,7 @@ function FouthPage({ slug }) {
   const [wish, setWish] = useState(" ");
   const [isAttend, setIsAttend] = useState(null);
   const [error, setError] = useState(null);
+  const [count, setCount] = useState(0);
   const style = {
     transform: isInView ? "none" : "translateY(700px)",
     transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
@@ -37,7 +39,7 @@ function FouthPage({ slug }) {
     return true;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = useDebounce(() => {
     const isValid = checkError({ name, wish, isAttend });
     if (isValid) {
       var data = { name, wish, isAttend };
@@ -59,7 +61,7 @@ function FouthPage({ slug }) {
           console.error("Error:", error);
         });
     }
-  };
+  }, 1300);
 
   useEffect(() => {
     function compareByDate(a, b) {
