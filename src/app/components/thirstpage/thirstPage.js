@@ -43,6 +43,15 @@ function ThirstPage() {
       <div className={cx("box")} style={style}>
         <h3 className={cx("title")}>Đám cưới sẽ được tổ chức vào :</h3>
 
+        <div className={cx("des-box")}>
+          <p className={cx("des")}>
+            Dự lễ ăn hỏi: 14h chiều ngày 23 tháng 3 năm 2024
+          </p>
+          <p className={cx("des")}>
+            Dự lễ thành hôn: 11h trưa ngày 24 tháng 3 năm 2024
+          </p>
+        </div>
+
         <div className={cx("addresses")}>
           {weddingInfo.map((info, index) => (
             <AddressModel

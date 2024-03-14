@@ -28,7 +28,25 @@
   line-height: 0.01;
   font-size: 2rem;
   font-family: Text2;
+  color: #333;
   font-weight: 700;
+}
+
+.des-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px;
+
+  .des {
+    font-family: Text2;
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 4px;
+    text-align: center;
+  }
 }
 
 .addresses {

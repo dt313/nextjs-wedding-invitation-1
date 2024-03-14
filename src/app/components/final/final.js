@@ -22,7 +22,7 @@ function Final() {
           ref={ref}
           style={style}
           className={cx("img")}
-          src={wedding.gray5}
+          src={wedding.yellow1}
         />
       </div>
 

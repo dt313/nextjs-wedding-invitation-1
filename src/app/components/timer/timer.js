@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { useInView, motion } from "framer-motion";
 import { google } from "calendar-link";
 import Birds from "~/app/static/birds";
+import images from "~/app/static/images";
 const cx = classNames.bind(styles);
 function Timer() {
   const [state, setState] = useState({

@@ -98,12 +98,14 @@
   margin: 24px 12px;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 
   .img {
     min-width: 400px;
     width: 100%;
-    height: auto;
+    max-height: 80%;
+    height: 100%;
     border-radius: 20px;
     object-fit: cover;
     // filter: grayscale(100%);
@@ -276,7 +278,7 @@
 
     .img-box {
       .img {
-        height: auto;
+        max-height: 100%;
       }
     }
   }

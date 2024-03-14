@@ -36,7 +36,7 @@ function IntroPage({ handleOpen, name = "You" }) {
             />
 
             <div className={cx("img-box")}>
-              <img className={cx("img")} src={wedding.gray4} />
+              <img className={cx("img")} src={wedding.gray3} />
             </div>
           </div>
           <div className={cx("right")}>

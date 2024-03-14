@@ -10,7 +10,7 @@ export async function generateMetadata({ params, searchParams }) {
     title: `Thiệp cưới của Hằng và Quảng | Mời ${name}`,
     openGraph: {
       images: [
-        "https://res.cloudinary.com/do6sozxbo/image/upload/v1702987668/wedding/gray/4.jpg",
+        "https://res.cloudinary.com/do6sozxbo/image/upload/v1710390249/wedding2/gray/1.jpg",
       ],
     },
   };

@@ -14,7 +14,7 @@ function SecondPage() {
       gender: "female",
       fatherName: "Lê Đình Thịnh",
       motherName: "Nguyễn Thị Kim Anh",
-      avatar: wedding?.gray1,
+      avatar: wedding?.bride,
     },
     {
       name: "Quảng",
@@ -22,7 +22,7 @@ function SecondPage() {
       gender: "male",
       fatherName: "Lê Đình Yên",
       motherName: "Nguyễn Thị Phượng",
-      avatar: wedding?.gray2,
+      avatar: wedding?.groom,
     },
   ];
 
