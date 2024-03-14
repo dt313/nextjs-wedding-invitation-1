@@ -44,11 +44,11 @@ function IntroPage({ handleOpen, name = "You" }) {
               <p className={cx("date")}>Ngày 23 & 24, Tháng 3 năm 2024 </p>
               <div className={cx("name-box")}>
                 <h3 className={cx("name")} style={{ marginTop: "-40px" }}>
-                  H
+                  Q
                 </h3>
                 <span className={cx("and")}></span>
                 <h3 className={cx("name")} style={{ marginTop: "40px" }}>
-                  Q
+                  H
                 </h3>
               </div>
 
