@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 export async function generateMetadata({ params, searchParams }) {
   const name = decodeURIComponent(params.name) || "You";
   return {
-    title: `Thiệp cưới của Hằng và Quảng | Mời ${name}`,
+    title: `Thiệp cưới của Quảng và Hằng | Mời ${name}`,
     openGraph: {
       images: [
         "https://res.cloudinary.com/do6sozxbo/image/upload/v1710390249/wedding2/gray/1.jpg",
