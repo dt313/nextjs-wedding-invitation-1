@@ -74,9 +74,9 @@ function Invitation({ name }) {
         <>
           <FirstPage />
           <SecondPage />
-          <div className={cx("img-box")}>
-            <img className={cx("img")} src={wedding.red8}></img>
-          </div>
+          {/* <div className={cx("img-box")}>
+            <img className={cx("img")} src={wedding.red2}></img>
+          </div> */}
           <ThirstPage />
           <FouthPage slug={name} />
           <Timer />
