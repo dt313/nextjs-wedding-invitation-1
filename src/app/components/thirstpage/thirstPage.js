@@ -14,7 +14,7 @@ function ThirstPage() {
       time: "4h chiều (ngày 23)",
       time2: "8h sáng (ngày 24) ",
       address: "Đội 6, An Xá , Quốc Tuấn, Nam Sách, Hải Dương",
-      street: "299C+PC5 Nam Sách, Hải Dương",
+      street: "28FV+G7F Nam Sách, Hải Dương, Việt Nam",
       phone: "0961 664 497",
     },
 
@@ -25,7 +25,7 @@ function ThirstPage() {
       time: "4h chiều (ngày 23)",
       time2: "8h sáng (ngày 24) ",
       address: "Xóm 13 , An Đông , An Bình , Nam Sách , Hải Dương",
-      street: "29G6+H7J Nam Sách, Hải Dương",
+      street: "29G6+F4F Nam Sách, Hải Dương, Việt Nam",
       phone: "0982 815 847",
     },
   ];
