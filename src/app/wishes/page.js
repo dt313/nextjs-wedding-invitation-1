@@ -3,7 +3,7 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./wishes.module.scss";
-
+import { api } from "../wedding";
 const cx = classNames.bind(styles);
 
 function Wishes({}) {
@@ -17,12 +17,8 @@ function Wishes({}) {
       return b.createdAt - a.createdAt;
     }
 
-    fetch("https://65788350f08799dc80457e4e.mockapi.io/api/v1/wishes")
-      .then((response) => response.json())
-      .then((data) => {
-        data.sort(compareByDate);
-        setWishes(data);
-      });
+    const data = api.sort(compareByDate);
+    setWishes(data);
   }, []);
 
   return (

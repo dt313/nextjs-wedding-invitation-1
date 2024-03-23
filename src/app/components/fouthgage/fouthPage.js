@@ -5,6 +5,7 @@ import { useInView, motion } from "framer-motion";
 import Analyst from "~/app/components/analyst";
 import images from "~/app/static/images";
 import useDebounce from "~/app/hepler/useDebounce";
+import { api } from "~/app/wedding";
 const cx = classNames.bind(styles);
 
 function FouthPage({ slug }) {
@@ -39,40 +40,63 @@ function FouthPage({ slug }) {
     return true;
   };
 
-  const handleSubmit = useDebounce(() => {
+  // const handleSubmit = useDebounce(() => {
+  //   const isValid = checkError({ name, wish, isAttend });
+  //   if (isValid) {
+  //     var data = { name, wish, isAttend };
+  //     fetch("https://65788350f08799dc80457e4e.mockapi.io/api/v1/wishes", {
+  //       method: "POST", // or 'PUT'
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(data),
+  //     })
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         setWishes((prev) => [data, ...prev]);
+  //         alert("Cảm ơn vì lời chúc của bạn !");
+  //         setName("");
+  //         setWish("");
+  //       })
+  //       .catch((error) => {
+  //         console.error("Error:", error);
+  //       });
+  //   }
+  // }, 1300);
+
+  const handleSubmit = () => {
     const isValid = checkError({ name, wish, isAttend });
     if (isValid) {
       var data = { name, wish, isAttend };
-      fetch("https://65788350f08799dc80457e4e.mockapi.io/api/v1/wishes", {
-        method: "POST", // or 'PUT'
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          setWishes((prev) => [data, ...prev]);
-          alert("Cảm ơn vì lời chúc của bạn !");
-          setName("");
-          setWish("");
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
+
+      alert("Đã hết thời gian gửi lời chúc");
+      // fetch("https://65788350f08799dc80457e4e.mockapi.io/api/v1/wishes", {
+      //   method: "POST", // or 'PUT'
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(data),
+      // })
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     setWishes((prev) => [data, ...prev]);
+      //     alert("Cảm ơn vì lời chúc của bạn !");
+      //     setName("");
+      //     setWish("");
+      //   })
+      //   .catch((error) => {
+      //     console.error("Error:", error);
+      //   });
     }
-  }, 1300);
+  };
 
   useEffect(() => {
     function compareByDate(a, b) {
       return b.createdAt - a.createdAt;
     }
-    fetch("https://65788350f08799dc80457e4e.mockapi.io/api/v1/wishes")
-      .then((response) => response.json())
-      .then((data) => {
-        data.sort(compareByDate);
-        setWishes(data);
-      });
+
+    const data = api.sort(compareByDate);
+    setWishes(data);
   }, []);
 
   return (
